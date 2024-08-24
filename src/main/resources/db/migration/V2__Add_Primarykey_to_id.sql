@@ -1,0 +1,2 @@
+ALTER TABLE employee
+ADD PRIMARY KEY (id);
