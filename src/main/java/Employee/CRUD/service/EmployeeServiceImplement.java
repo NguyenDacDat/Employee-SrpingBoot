@@ -29,8 +29,8 @@ public class EmployeeServiceImplement implements EmployeeService {
         if(optionalEmployeeEntity.isPresent()){
             return optionalEmployeeEntity.get();
         }
-//        throw  new EmployeeNotFoundException();
-        throw  new testException();
+        throw  new EmployeeNotFoundException();
+
     }
 
     @Override
@@ -47,6 +47,6 @@ public class EmployeeServiceImplement implements EmployeeService {
     @Override
     public void deleteEmployeeById(Integer id) {
         employeeRepository.deleteById(Long.valueOf(id));
-//        throw  new testException();
+        throw  new testException();
     }
 }
